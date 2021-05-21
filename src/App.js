@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import axios from 'axios'
+//import axios from 'axios'
 import React, { useEffect, useState } from "react";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    axios.get(url).then(json => setData(json.data))
+   // axios.get(url).then(json => setData(json.data))
   }, [])
 
   const renderTable = () => {
@@ -33,7 +33,7 @@ function App() {
         </p>
 
         <p>
-        <h1 id="title"> Table</h1><table id="users"> 
+        <h1 id="title"> Table 1</h1><table id="users"> 
         <thead>
           <tr>
             <th>Name</th>

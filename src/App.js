@@ -30,6 +30,16 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>
+        <h1 id="title"> Table 1</h1><table id="users"> 
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody>{renderTable()}</tbody>
+      </table></p>
         <a
           className="App-link"
           href="https://reactjs.org"

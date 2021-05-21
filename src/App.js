@@ -52,14 +52,16 @@ function App() {
 
 function fetchAllData()
 {
+  setOffice_Name('')
+  setOffice_Add('')
   axios.get(urlGetData).then(json => setData(json.data))
 }
 
   const renderAddNewRow = () => {    
       return (
         <tr >
-          <td><input type="text" onChange={e => updateOfficeName(e.target.value)} /></td>
-          <td><input type="text" onChange={e => updateOfficeAdd(e.target.value)} /></td> 
+          <td><input type="text"  value={Office_Name} onChange={e => updateOfficeName(e.target.value)} /></td>
+          <td><input type="text"  value={Office_Add}  onChange={e => updateOfficeAdd(e.target.value)} /></td> 
           <td><button value={"example"} onClick={handleSubmit} > Save </button> </td>         
         </tr>
       )
@@ -84,7 +86,8 @@ function fetchAllData()
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-        <h1 id="title"> Table 1</h1><table id="users"> 
+       
+        <table id="users"> 
         <thead>
           <tr>
             <th>Name</th>

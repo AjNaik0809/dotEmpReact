@@ -90,7 +90,7 @@ function fetchAllData()
         <table id="users"> 
         <thead>
           <tr>
-            <th>Name</th>
+            <th>Office Name</th>
             <th>Address</th>
           </tr>
         </thead>

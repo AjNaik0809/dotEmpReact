@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
+import React, { useEffect, useState } from "react";
 
 function App() {
   const url = 'https://yza2oma942.execute-api.eu-west-1.amazonaws.com/Prod/api/officeData'
@@ -21,7 +22,7 @@ function App() {
       )
     })
   }
-  
+
   return (
     <div className="App">
       <header className="App-header">
